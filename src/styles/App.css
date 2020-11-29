@@ -1,0 +1,68 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-form {
+  margin-bottom: 2em;
+}
+
+.weather-card {
+  border: 1px solid tomato;
+  width: 600px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:  #233343;
+  color: #dfeffd;
+}
+
+.weather-temp-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.weather-description-icon {
+  text-transform:capitalize;
+}
+
+.weather-curr-condition {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.weather-curr-temp {
+  font-weight: 600;
+  font-size: 3rem;
+  font-weight: 600;
+
+margin: 0;
+}
+
+.weather-temp-and-feels{
+  position: relative;
+left: 56%;
+}
+
+.weather-props-item{
+  display: flex;
+align-items: center;
+margin-bottom: 5px;
+font-weight: 600;
+}
+
+.svg-icon {
+  width: 35px !important; 
+  height: 35px;
+  margin-right: 5px;
+}
+
+.weather-name_icon {
+  text-align: center;
+}
