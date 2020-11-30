@@ -31,13 +31,15 @@ function App() {
   return (
     <div className='App'>
      <div className="container">
-        <h1>Current Weather:  </h1>
+       <div className="input">
+        <h1>Weather App  </h1>
         <Divider />
         <TypeCity setCity={setCity} loader={loader} />
-        {weather && 
-        <Widget weather={weather} />}
+        </div>
         {err && 
         <Message error header={`Error code: ${err.status}`} content={err.data.message} />}
+        {weather && 
+        <Widget weather={weather} />}
     </div>
     </div>
   )

@@ -1,18 +1,20 @@
 import React from 'react'
 
 const WeatherDesciption = ({ weather }) => {
+
+  function minutes_with_leading_zeros() 
+{ 
+  return (new Date().getMinutes() < 10 ? '0' : '') + new Date().getMinutes();
+}
   return (
-    <div className='weather-name_icon'>
+    <div className='weather-name'>
+      <div className="city-name">
       <p className='weather-city-name'>
         {weather.name}, {weather.sys.country}
       </p>
-
-      <img
-        src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`}
-        alt=''
-        className='src'
-      />
-      <p className='weather-description-icon'> {weather.weather[0].description} </p>
+      </div>
+  <div className='weather-currtime'> {new Date().getHours()}:{minutes_with_leading_zeros()}</div>
+     
     </div>
   )
 }
