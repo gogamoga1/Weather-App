@@ -6,7 +6,6 @@ import WeatherTemp from './WeatherTemp'
 const Widget = ({ weather }) => {
   const [tempMode, setTempMode] = useState('Celsius')
 
-  console.log(weather)
   return (
     <div className='weather-card'>
       <WeatherDesciption weather={weather} />
